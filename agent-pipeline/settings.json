@@ -1,0 +1,31 @@
+{
+  "_comment": "Adapted excerpt from a private project: hook registration only. In the source project this file is .claude/settings.json, and hooks/ and bin/ live under .claude/.",
+  "subagentPromptCacheTtl": "1h",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PROJECT_DIR}/.claude/hooks/pre-tool-use.sh" }
+        ]
+      },
+      {
+        "matcher": "Bash|Read|Grep|Glob",
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PROJECT_DIR}/.claude/hooks/pr-pruefer-guard.sh" }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      { "hooks": [ { "type": "command", "command": "${CLAUDE_PROJECT_DIR}/.claude/hooks/token-log.sh" } ] }
+    ],
+    "Stop": [
+      { "hooks": [ { "type": "command", "command": "${CLAUDE_PROJECT_DIR}/.claude/hooks/token-log.sh" } ] }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(.claude/bin/gh-api.sh:*)"
+    ]
+  }
+}
