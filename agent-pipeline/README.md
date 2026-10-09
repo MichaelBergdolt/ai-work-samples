@@ -1,5 +1,10 @@
 # Agent pipeline: issue → PR → review → merge with Claude Code
 
+> **In short**
+> - Three Claude Code agents and a set of scripts take a GitHub issue to a reviewed, merged change. Every agent run's token use is logged, and the log shows where the cost goes.
+> - Main lesson: the model gets the judgement, code gets the comparisons, and an agent's own claim ("tests pass") never counts as evidence.
+> - This carries over beyond software. An AI workflow for drafting reports or reviewing contracts needs the same three things: an independent check, measured cost, and a clear line where the model must not decide.
+
 ## What this is
 
 The multi-agent setup a friend and I use to develop a web app we build together: a human starts one command,
