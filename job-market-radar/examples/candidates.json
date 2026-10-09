@@ -1,0 +1,12 @@
+{
+  "accepted": [
+    {"url": "https://board.example/s/zz99yy88", "source": "indeed", "title": "Working Student Data Science (m/f/d)", "company": "Nordlicht Energie GmbH", "posted": "2026-09-20", "fixed_hours": null, "why": "Forecasting models for wind and solar output, Python and SQL, hours flexible."},
+    {"url": "https://jobs.nordlicht-energie.example/job/4711?utm_source=board", "source": "career_page", "title": "Working Student Data Science (m/w/d)", "company": "Nordlicht Energie GmbH", "posted": "2026-09-20", "fixed_hours": null, "why": "Forecasting models for wind and solar output, Python and SQL, hours flexible."},
+    {"url": "https://board.example/s/ee55ff66", "source": "indeed", "title": "Werkstudent KI-Automatisierung (all genders)", "company": "Kranich Pay GmbH", "posted": "2026-09-30", "fixed_hours": null, "why": "Automates invoice checks with an LLM workflow and measures its error rate, hours flexible."},
+    {"url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/00000-0000000000-S", "source": "ba", "title": "Werkstudent Data Engineering", "company": "Hafenblick Analytics GmbH", "posted": null, "fixed_hours": 20, "why": "Data pipelines and dashboards for port logistics data."}
+  ],
+  "rejected": [
+    {"title": "Werkstudent Stammdatenpflege", "company": "Elbwerk Logistik AG", "reason": "master data entry only, no analysis or AI work"},
+    {"title": "Working Student IT Support", "company": "Moewe Software AG", "reason": "IT support"}
+  ]
+}

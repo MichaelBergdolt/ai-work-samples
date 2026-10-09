@@ -1,0 +1,15 @@
+{
+  "ratings": {
+    "Nordlicht Energie GmbH": {"score": 4.2, "recommend": 88, "reviews": 312, "ceo_approval": 74, "awards": ["Top Company 2026"], "fetched": "2026-09-27"},
+    "Elbwerk Logistik AG": {"score": 3.9, "recommend": 68, "reviews": 405, "ceo_approval": null, "awards": [], "fetched": "2026-09-01"},
+    "Kranich Pay GmbH": {"score": 3.6, "recommend": 81, "reviews": 14, "ceo_approval": null, "awards": [], "fetched": "2026-09-27"}
+  },
+  "career_pages": {
+    "Nordlicht Energie GmbH": "https://jobs.nordlicht-energie.example/search?q=working+student&location=example-city"
+  },
+  "jobs": [
+    {"id": "https://jobs.nordlicht-energie.example/job/4711", "title": "Working Student Data Science (m/f/d)", "company": "Nordlicht Energie GmbH", "first_seen": "2026-09-27"},
+    {"id": "https://board.example/s/aa11bb22", "title": "Werkstudent KI-Automatisierung (m/w/d)", "company": "Kranich Pay GmbH", "first_seen": "2026-10-02"},
+    {"id": "https://board.example/s/cc33dd44", "title": "Werkstudent Reporting", "company": "Elbwerk Logistik AG", "first_seen": "2026-09-27"}
+  ]
+}

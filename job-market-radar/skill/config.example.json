@@ -1,0 +1,29 @@
+{
+  "location": "<city>",
+  "country": "<country code>",
+  "role_types": [
+    "<role type, e.g. working student>"
+  ],
+  "hours_per_week": "<hours you can offer>",
+  "search_terms": [
+    "<role type> <topic>",
+    "<role type> <topic>"
+  ],
+  "include_if": "<what the work must involve to count as a fit>",
+  "exclude_if": [
+    "<kind of role to skip>",
+    "<kind of role to skip>"
+  ],
+  "preferred_sectors": [
+    "<sector>",
+    "<sector>"
+  ],
+  "target_employers": {
+    "<group>": [
+      "<employer>",
+      "<employer>"
+    ]
+  },
+  "scrape_budget_per_run": 40,
+  "rating_max_age_days": 28
+}
