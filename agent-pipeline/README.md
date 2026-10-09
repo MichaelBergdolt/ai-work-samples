@@ -2,7 +2,7 @@
 
 ## What this is
 
-The multi-agent setup I use to develop a web app I build on my own: a human starts one command,
+The multi-agent setup a friend and I use to develop a web app we build together: a human starts one command,
 and Claude Code subagents take open GitHub issues through implementation, independent review and
 squash-merge, with hooks and scripts enforcing what prompts alone did not. This folder holds the
 agent definitions, the orchestrator, the process skills, the hooks with their tests, excerpts of
@@ -77,10 +77,25 @@ two points that *report* skewed labels; the GitHub wrapper rejects a URL-shaped 
 fixing it; a failing cleanup step ends with exit 1 and the path, because a previous silent skip
 had left branches behind after every merge.
 
+**Two developers, two machines, two Claude accounts: coordination runs through GitHub, not
+through anyone's local copy.** We each run the pipeline from our own machine and account against
+one repository, and each side pushes to `dev` while the other is mid-session. Before the pipeline
+existed this cost duplicate work twice in one afternoon (2026-08-26: the same package ID claimed
+by both sides, and a feature built locally while an equivalent one was already on `origin/dev`).
+What followed: GitHub issue numbers are the only IDs; the issue assignee is the reservation,
+because it is the one thing the other person can see; every agent measures its checkout against
+`origin/dev` before working and reports a gap, since rule files are copied into an agent's
+context at start and do not update (on 2026-09-05 all four roles worked from an outdated rule
+text without noticing); and commit identity is taken from the GitHub account instead of local
+git config, after commits had gone out under a name that does not exist on GitHub. Usage limits
+are per Claude account, so the budget check before each issue only sees the account it runs
+under.
+
 ## Cost engineering findings
 
 All numbers from the project's git history or its hook log (`agents.jsonl`, 2026-09-04 to
-2026-10-09); full tables in [`cost-report.md`](cost-report.md).
+2026-10-09); full tables in [`cost-report.md`](cost-report.md). The log is local and not
+committed, so it covers only the runs on my machine and Claude account, not my friend's.
 
 - **A rules file without `paths:` is loaded into every agent turn, and it grew fast.**
   `.claude/rules/prozess.md` was 23 252 bytes on 2026-09-02, 128 542 bytes on 2026-09-12 and

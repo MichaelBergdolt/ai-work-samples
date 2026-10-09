@@ -2,8 +2,9 @@
 
 Generated with [`tools/agent_costs.py`](tools/agent_costs.py) from the project's local
 `agents.jsonl` (2 427 raw rows, 2026-09-04 to 2026-10-09). The raw log is not part of this
-repository. Weights in input-token equivalents of the same model: input 1, cache read 0.1,
-cache write 2 (1h) / 1.25 (5m), output 5. Price differences between models are not applied.
+repository; it holds only the runs on my machine and Claude account, not those of the friend I
+build the project with. Weights in input-token equivalents of the same model: input 1, cache
+read 0.1, cache write 2 (1h) / 1.25 (5m), output 5. Price differences between models are not applied.
 
 ## Subagents, whole period
 

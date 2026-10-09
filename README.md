@@ -6,7 +6,7 @@ and their evaluation.
 
 | Sample | What it shows |
 |---|---|
-| [`agent-pipeline/`](agent-pipeline/) | A Claude Code multi-agent pipeline that takes GitHub issues from implementation through independent review to merge, with hooks, scripts and a token-cost analysis. |
+| [`agent-pipeline/`](agent-pipeline/) | A Claude Code multi-agent pipeline that takes GitHub issues from implementation through independent review to merge, with hooks, scripts and a token-cost analysis; built together with a friend. |
 | Job-market monitoring agent (Claude skill with MCP connectors) | Coming soon. |
 | Evaluating an evolutionary prompt-optimization system (paper + notebook) | Coming soon. |
 
