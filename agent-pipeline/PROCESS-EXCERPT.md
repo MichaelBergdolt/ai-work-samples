@@ -29,9 +29,6 @@ Hauptsitzung und hat kein Frontmatter; er lädt seine zwei per `Skill(...)` als 
 8. Hartes Gate: grüner Lauf **am SHA**. Squash-Merge durch `merge.sh`.
 9. Nachziehen: Issue schließen, Branch remote und lokal löschen, `dev` gegen den Merge-SHA prüfen.
 
-Drei dieser Schritte (1, 3, 9) blieben vorher regelmäßig aus, und alle drei mit demselben
-Fehlertyp: **es sieht die ganze Zeit gesund aus.**
-
 ## Ein Arbeitsbaum je Sitzung (Zusammenfassung)
 
 Jede Sitzung und jeder `entwickler` arbeitet in einem eigenen `git worktree`. Zwei Sitzungen in
